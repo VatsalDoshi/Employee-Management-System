@@ -10,82 +10,117 @@ package model;
  */
 public class Employee {
    
-    private String Create;
-    private String Read;
-    private String Update;
-    private String Delete;
+    private String Name;
+    private int EmployeeID;
+    private int Age;
+    private String Gender;
+    private String StartDate;
+    private String Level;
+    private String TeamInfo;
+    private String PositionTitle;
+    private String CellNumber;
+    private String Email;
+    private String Photo;
+    
 
-    public String getCreate() {
-        return Create;
-    }
-
-    public void setCreate(String Create) {
-        this.Create = Create;
-    }
-
-    public String getRead() {
-        return Read;
-    }
-
-    public void setRead(String Read) {
-        this.Read = Read;
-    }
-
-    public String getUpdate() {
-        return Update;
-    }
-
-    public void setUpdate(String Update) {
-        this.Update = Update;
-    }
-
-    public String getDelete() {
-        return Delete;
-    }
-
-    public void setDelete(String Delete) {
-        this.Delete = Delete;
+    public String getName() {
+        return Name;
     }
 
     public void setName(String Name) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        this.Name = Name;
     }
 
-    public void setEmployeeId(String EmployeeId) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public int getEmployeeID() {
+        return EmployeeID;
     }
 
-    public void setAge(String Age) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public void setEmployeeID(int EmployeeID) {
+        this.EmployeeID = EmployeeID;
+    }
+
+    public int getAge() {
+        return Age;
+    }
+
+    public void setAge(int Age) {
+        this.Age = Age;
+    }
+
+    public String getGender() {
+        return Gender;
     }
 
     public void setGender(String Gender) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        this.Gender = Gender;
+    }
+
+    public String getStartDate() {
+        return StartDate;
     }
 
     public void setStartDate(String StartDate) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        this.StartDate = StartDate;
+    }
+
+    public String getLevel() {
+        return Level;
     }
 
     public void setLevel(String Level) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        this.Level = Level;
     }
 
-    public void PositionTitle(String PositionTitle) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public void setContactInfo(String ContactInfo) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public void setPhoto(String Photo) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public String getTeamInfo() {
+        return TeamInfo;
     }
 
     public void setTeamInfo(String TeamInfo) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        this.TeamInfo = TeamInfo;
     }
+
+    public String getPositionTitle() {
+        return PositionTitle;
+    }
+
+    public void setPositionTitle(String PositionTitle) {
+        this.PositionTitle = PositionTitle;
+    }
+
+    public String getCellNumber() {
+        return CellNumber;
+        
+    }
+    
+    public String getEmail() {
+        return Email;
+        
+    }
+
+    public void setCellNumber(String CellNumber) {
+        this.CellNumber = CellNumber;
+    }
+    
+    public void setEmail(String Email) {
+        this.Email = Email;
+    }
+
+    public String getPhoto() {
+        return Photo;
+    }
+
+    public void setPhoto(String Photo) {
+        this.Photo = Photo;
+    }
+
+            
+   @Override
+    public String toString(){
+    return Name; 
+    }
+
+    
+   
     
     
 }

@@ -52,6 +52,11 @@ public class MainJFrame extends javax.swing.JFrame {
         });
 
         btnRead.setText("Read");
+        btnRead.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnReadActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout controlPanelLayout = new javax.swing.GroupLayout(controlPanel);
         controlPanel.setLayout(controlPanelLayout);
@@ -101,6 +106,14 @@ public class MainJFrame extends javax.swing.JFrame {
            splitPane.setRightComponent(createPanel);
             
     }//GEN-LAST:event_btnCreateActionPerformed
+
+    private void btnReadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReadActionPerformed
+        // TODO add your handling code here:
+        
+           ViewJPanel viewPanel = new ViewJPanel(history);
+           splitPane.setRightComponent(viewPanel);
+
+    }//GEN-LAST:event_btnReadActionPerformed
 
     /**
      * @param args the command line arguments
